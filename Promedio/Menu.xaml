@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Promedio.Menu"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#C7FD9F">
+    <StackLayout>
+        <Frame BackgroundColor="#59A2D8">
+
+            <Label Text="Promedio"
+                   FontSize="36"
+                   HorizontalTextAlignment="Center"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" />
+        </Frame>
+        <Image Margin="0,60,0,0"
+               Source="espel.png"
+               WidthRequest="380" />
+
+        <Image Margin="0,60,0,30"
+               Source="xd.jpg"
+               WidthRequest="250" />
+        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Button Text="Entrar"
+                    Margin="20,20"
+                    Background="#FD3581"
+                    TextColor="White"
+                    CornerRadius="100"
+                    FontAttributes="Bold"
+                    FontSize="18" 
+                    Grid.Column="0" Grid.Row="0"
+                    x:Name="btnentrar"
+                    Clicked="btnentrar_Clicked"/>
+            <Button Text="Salir"
+                     Margin="20,20"
+                    BackgroundColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="100"
+                    FontSize="18"
+                    Grid.Column="1"
+                    Grid.Row="0" />
+        </Grid>
+    </StackLayout>
+</ContentPage>
